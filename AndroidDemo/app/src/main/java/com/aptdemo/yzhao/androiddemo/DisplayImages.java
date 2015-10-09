@@ -1,10 +1,10 @@
 package com.aptdemo.yzhao.androiddemo;
-
 import android.app.Dialog;
 import android.content.Context;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+//import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,6 +26,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+
+import org.json.*;
+import com.loopj.android.http.*;
 
 public class DisplayImages extends ActionBarActivity {
     Context context = this;
