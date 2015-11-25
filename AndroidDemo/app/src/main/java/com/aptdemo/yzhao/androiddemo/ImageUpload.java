@@ -118,8 +118,6 @@ public class ImageUpload extends ActionBarActivity {
                             ByteArrayOutputStream baos = new ByteArrayOutputStream();
                             bitmapImage.compress(Bitmap.CompressFormat.JPEG, 50, baos);
                             byte[] b = baos.toByteArray();
-                            byte[] encodedImage = Base64.encode(b, Base64.DEFAULT);
-                            String encodedImageStr = encodedImage.toString();
 
                             getUploadURL(b, photoCaption);
                         }
